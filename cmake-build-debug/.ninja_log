@@ -1,0 +1,11 @@
+# ninja log v5
+1	47	7174145320780711	CMakeFiles/C_101.dir/ProgrammeringAssigment1/test.c.obj	6b839988ac19ad84
+46	111	7174170395213238	C_101.exe	fab424914d75069d
+1	46	7174160785219737	CMakeFiles/C_101.dir/ProgrammeringAssigment1/task2.c.obj	6d3045dab4fd9515
+0	130	7174176295800484	build.ninja	3702ecd8c28977a6
+0	46	7174170394593225	CMakeFiles/C_101.dir/ProgrammeringAssigment1/task4.c.obj	16caf36d0cc32557
+1	110	7174176295800484	build.ninja	3702ecd8c28977a6
+0	49	7174176296949925	CMakeFiles/C_101.dir/ProgrammeringAssigment1/task5.c.obj	5d65601a5a7f6638
+49	118	7174176297610206	C_101.exe	d908213f93b958d3
+1	45	7174179504179127	CMakeFiles/C_101.dir/ProgrammeringAssigment1/task5.c.obj	5d65601a5a7f6638
+46	101	7174179504701957	C_101.exe	d908213f93b958d3
