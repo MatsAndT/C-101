@@ -1,11 +1,14 @@
 # ninja log v5
+2	75	7176037647244547	CMakeFiles/C_101.dir/tavle/DataTypes.c.obj	ee948adc004088e0
 1	47	7174145320780711	CMakeFiles/C_101.dir/ProgrammeringAssigment1/test.c.obj	6b839988ac19ad84
-46	111	7174170395213238	C_101.exe	fab424914d75069d
+84	179	7176059530121462	C_101.exe	d35d21fc3fc6999e
 1	46	7174160785219737	CMakeFiles/C_101.dir/ProgrammeringAssigment1/task2.c.obj	6d3045dab4fd9515
-0	130	7174176295800484	build.ninja	3702ecd8c28977a6
+0	114	7176063162692381	build.ninja	3702ecd8c28977a6
 0	46	7174170394593225	CMakeFiles/C_101.dir/ProgrammeringAssigment1/task4.c.obj	16caf36d0cc32557
-1	110	7174176295800484	build.ninja	3702ecd8c28977a6
-0	49	7174176296949925	CMakeFiles/C_101.dir/ProgrammeringAssigment1/task5.c.obj	5d65601a5a7f6638
-49	118	7174176297610206	C_101.exe	d908213f93b958d3
 1	45	7174179504179127	CMakeFiles/C_101.dir/ProgrammeringAssigment1/task5.c.obj	5d65601a5a7f6638
-46	101	7174179504701957	C_101.exe	d908213f93b958d3
+2	79	7176048862051626	CMakeFiles/C_101.dir/ProgrammeringAssigment2/taks4.c.obj	e73104654159f2f2
+0	117	7176052116424915	CMakeFiles/C_101.dir/ProgrammeringAssigment2/taks6.c.obj	ccdee3e12bf5eff1
+3	83	7176059529229063	CMakeFiles/C_101.dir/ProgrammeringAssigment2/task7.c.obj	bcead11ccac004ed
+1	134	7176063162692381	build.ninja	3702ecd8c28977a6
+1	87	7176063163905784	CMakeFiles/C_101.dir/ProgrammeringAssigment2/task8.9.c.obj	59ef3b8d83014f75
+88	212	7176063165082383	C_101.exe	efbd4b2259f63f05
