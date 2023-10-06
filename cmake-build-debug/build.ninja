@@ -49,8 +49,8 @@ cmake_ninja_workdir = C$:/Users/Mats/Documents/CLionProjects/C-101/cmake-build-d
 
 build cmake_object_order_depends_target_C_101: phony || CMakeFiles/C_101.dir
 
-build CMakeFiles/C_101.dir/ProgrammeringAssigment2/task8.9.c.obj: C_COMPILER__C_101_unscanned_Debug C$:/Users/Mats/Documents/CLionProjects/C-101/ProgrammeringAssigment2/task8.9.c || cmake_object_order_depends_target_C_101
-  DEP_FILE = CMakeFiles\C_101.dir\ProgrammeringAssigment2\task8.9.c.obj.d
+build CMakeFiles/C_101.dir/ProgrammeringAssigment2/task4.11.c.obj: C_COMPILER__C_101_unscanned_Debug C$:/Users/Mats/Documents/CLionProjects/C-101/ProgrammeringAssigment2/task4.11.c || cmake_object_order_depends_target_C_101
+  DEP_FILE = CMakeFiles\C_101.dir\ProgrammeringAssigment2\task4.11.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Mats/Documents/CLionProjects/C-101/.
   OBJECT_DIR = CMakeFiles\C_101.dir
@@ -64,7 +64,7 @@ build CMakeFiles/C_101.dir/ProgrammeringAssigment2/task8.9.c.obj: C_COMPILER__C_
 #############################################
 # Link the executable C_101.exe
 
-build C_101.exe: C_EXECUTABLE_LINKER__C_101_Debug CMakeFiles/C_101.dir/ProgrammeringAssigment2/task8.9.c.obj
+build C_101.exe: C_EXECUTABLE_LINKER__C_101_Debug CMakeFiles/C_101.dir/ProgrammeringAssigment2/task4.11.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\C_101.dir

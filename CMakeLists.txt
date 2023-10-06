@@ -6,5 +6,5 @@ set(CMAKE_C_STANDARD 11)
 include_directories(.)
 
 add_executable(C_101
-        ProgrammeringAssigment2/task8.9.c
+        ProgrammeringAssigment2/task4.11.c
 )
