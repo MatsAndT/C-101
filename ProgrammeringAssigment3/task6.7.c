@@ -6,7 +6,7 @@
 int main(void) {
     const int n = 150;
     int index, j;
-    int P[n];
+    int P[n+1];
 
     // steg 1, sett alle tall over index 2 til 0
     for (index = 2; index < n; ++index) {
