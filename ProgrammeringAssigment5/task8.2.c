@@ -25,40 +25,40 @@ int g(struct Date d) {
     }
 }
 
-int calc_diff(struct Date d1, struct Date d2) {
-    int f1 = 1461 * f(d1) / 4 + 153 * g(d1) / 5 + d1.day;
-    int f2 = 1461 * f(d2) / 4 + 153 * g(d2) / 5 + d2.day;
-
-    return f2 - f1;
-}
-
-struct Date fix_year(struct Date d) {
+int fix_year(struct Date d) {
     // Hvis datoen er over 1 mars 1900 så skjer det ikke noe
     if (d.year > 1900) {
-        return d;
+        return 0;
     } else if (d.year == 1900) {
         if (d.month <= 2) {
-            return d;
+            return 0;
         }
     }
 
     // Hvis datoen er over mars 1 1800 så legger vi til en
     if (d.year > 1800) {
-        struct Date fix_d = {d.day, d.month, d.year++};
-        return fix_d;
+        return 1;
     } else if (d.year == 1800) {
         if (d.month <= 2) {
-            struct Date fix_d = {d.day, d.month, d.year++};
-            return  fix_d;
+            return 1;
         }
     }
 
-    struct Date fix_d = {d.day, d.month, d.year+=2};
-    return fix_d;
+    return 2;
+}
+
+int calc_diff(struct Date d1, struct Date d2) {
+    int f1 = 1461 * f(d1) / 4 + 153 * g(d1) / 5 + d1.day;
+    int f2 = 1461 * f(d2) / 4 + 153 * g(d2) / 5 + d2.day;
+
+    f1 += fix_year(d1);
+    f2 += fix_year(d2);
+
+    return f2 - f1;
 }
 
 struct Date get_date() {
-    printf("Type a date in this format dd/mm/yyyy, dont11 type /, but press enter after each number, the date must be after 28/02/1800!\n");
+    printf("Type a date in this format dd/mm/yyyy, don't type /, but press enter after each number, the date must be after 28/02/1700!\n");
     int day, month, year;
     scanf("%i %i %i", &day, &month, &year);
     struct Date d = {day, month, year};
@@ -69,9 +69,6 @@ struct Date get_date() {
 int main(void) {
     struct Date d1 = get_date();
     struct Date d2 = get_date();
-
-    d1 = fix_year(d1);
-    d2 = fix_year(d2);
 
     int diff = calc_diff(d1, d2);
     printf("Diff: %i", diff);
