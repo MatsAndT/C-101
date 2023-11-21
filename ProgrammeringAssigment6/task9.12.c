@@ -63,9 +63,11 @@ char* replaceString(char source[], char s1[], char s2[]) {
     return source;
 }
 
-float strToFloat(char str[]) {
-    float numb = 0;
+double strToDouble(char str[]) {
+    double numb = 0;
     int i = 0;
+
+    // Find put if the number is negativ
     bool isNegativ = false;
     if (str[0] == '-') {
         isNegativ = true;
@@ -73,52 +75,25 @@ float strToFloat(char str[]) {
     }
     int bigestPos = findString(str, ".");
 
+    // Find the amout of desimal
+    int desimal_lenght = 0;
+    while (str[desimal_lenght+bigestPos+1] != '\0') ++desimal_lenght;
+    // remove the .
+    str = replaceString(str, ".", "");
+
 
     while (str[i] != '\0') {
-        double current_numb;
-        switch (str[i]) {
-            case '1':
-                current_numb = 1;
-                break;
-            case '2':
-                current_numb = 2;
-                break;
-            case '3':
-                current_numb = 3;
-                break;
-            case '4':
-                current_numb = 4;
-                break;
-            case '5':
-                current_numb = 5;
-                break;
-            case '6':
-                current_numb = 6;
-                break;
-            case '7':
-                current_numb = 7;
-                break;
-            case '8':
-                current_numb = 8;
-                break;
-            case '9':
-                current_numb = 9;
-                break;
-        }
-        numb += current_numb * pow(10, bigestPos-1);
+        numb += (str[i] - '0') * pow(10, bigestPos-1);
         --bigestPos;
         ++i;
     }
 
-
-
-
     if (isNegativ) numb *=-1;
-    printf("%s\n", str);
     return numb;
 }
 
 int main(void) {
-    char numText[] = "-254.125";
-    printf("%f", strToFloat(numText));
+    char numText[] = "-2524.1267";
+    printf("%s\n", numText);
+    printf("%f\n", strToDouble(numText));
 }
